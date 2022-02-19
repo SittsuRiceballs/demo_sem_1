@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://www.vascara.com/templates/current/css/store/vascara/desktop/font-awesome.min.css?v=777" rel="stylesheet">
+    <link href="https://www.vascara.com/templates/current/css/store/vascara/desktop/bootstrap.min.css?v=777" rel="stylesheet">
+    <link href="https://www.vascara.com/templates/current/css/store/vascara/desktop/global.css?v=777" rel="stylesheet">
+    <link href="https://www.vascara.com/templates/current/css/store/vascara/desktop/footer.css?v=777" rel="stylesheet">
+    <link href="https://www.vascara.com/templates/current/css/store/vascara/desktop/font-awesome.min.css?v=777" rel="stylesheet">
+    <link href="https://www.vascara.com/templates/current/css/store/vascara/desktop/backtop.css?v=777" rel="stylesheet">
+    <link href="https://www.vascara.com/templates/current/css/store/vascara/desktop/vas-custom.css?v=777" rel="stylesheet">
+    <link href="https://www.vascara.com/templates/current/css/store/vascara/desktop/loader.css?v=777" rel="stylesheet">
+    <link href="https://www.vascara.com/templates/current/css/store/vascara/desktop/tem.css?v=777" rel="stylesheet">
+    <link href="https://www.vascara.com/templates/current/css/store/vascara/desktop/view-bag.css?v=777" rel="stylesheet">
+    <link href="https://www.vascara.com/templates/current/css/store/vascara/desktop/toastr.css?v=777" rel="stylesheet">
+    <link href="https://www.vascara.com/templates/current/css/store/vascara/desktop/menu.css?v=777" rel="stylesheet">
+    <link rel="stylesheet" href="css/Homepage.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/494029ebc7.js" crossorigin="anonymous"></script>
+    <style>
+        #menutop .level2{
+            margin-top:19px;
+        }
+        #menutop li:hover ul{
+            display: block !important;
+        }
+        <!--[endif]-->
+
+
+        #menutop {
+            list-style-type: none;
+
+        }
+        #menutop li.level1 {
+            float: left;
+            font-size: 14px;
+            padding: 10px;
+
+        }
+        #menutop li ul {
+            display: none;
+        }
+        #menutop a{
+            color: #777;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: normal;
+        }
+        #menutop li:hover ul{
+            display: inline-block;
+        }
+        #menutop .level2{
+            position: absolute;
+            list-style-type: none;
+            border-left:  1px dashed #dedcdc;
+            border-right: 1px dashed #dedcdc;
+            border-bottom: 1px dashed #dedcdc;
+            width: 200px;
+            line-height: 35px;
+            margin-top:2px;
+            z-index:999999;
+            background: white;
+            padding-left: 20px;
+        }
+        #header-province-name:hover{
+            color: white;
+        }
+        .header-fix-top{
+            top: 0;
+            overflow: hidden;
+            position: fixed;
+            width: 100%;
+            z-index: 20;
+        }
+    </style>
+<body>
+<!-- header -->
+<div class="agileits_header">
+    <div class="container">
+        <div class="w3l_offers">
+            <p>SALE UP TO 5% OFF. USE CODE "SALE10%" . <a href="#">SHOP NOW</a></p>
+        </div>
+        <div class="agile-login">
+            <ul>
+                <li><a href="#" class=" my-3" data-toggle="modal" data-target="#modalLRForm">LogIn/Register</a></li>
+                <li><a href="#">Help</a></li>
+
+            </ul>
+        </div>
+        <div class="product_list_header">
+            <form action="#" method="post" class="last">
+                <input type="hidden" name="cmd" value="_cart">
+                <input type="hidden" name="display" value="1">
+                <button class="w3view-cart " type="submit" name="submit" value=""><i class="fa fa-cart-arrow-down "
+                                                                                     aria-hidden="true"></i></button>
+            </form>
+            <span class="badge">4</span>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+</div>
+
+<div class="logo_products">
+    <div class="container">
+        <div class="w3ls_logo_products_left1">
+            <ul class="phone_email">
+                <li><i class="fa fa-phone" aria-hidden="true"></i>Order online or call us : (+0123) 234 567</li>
+
+            </ul>
+        </div>
+        <div class="w3ls_logo_products_left">
+            <a href="index.html"><img src="imgs/Logo.jpg" alt="LOGO"
+                                      style="margin-top :-25px; margin-bottom: -20px"></a>
+        </div>
+        <div class="w3l_search">
+            <form action="#" method="post">
+                <input type="search" name="Search" placeholder="Search for a Product..." required="">
+                <button type="submit" class="btn btn-default search" aria-label="Left Align">
+                    <i class="fa fa-search" aria-hidden="true"> </i>
+                </button>
+                <div class="clearfix"></div>
+            </form>
+        </div>
+
+        <div class="clearfix"></div>
+    </div>
+</div>
+<!-- //header -->
+<!--        LOGIN/REGISTER-->
+<!--Modal: Login / Register Form-->
+<div class="modal fade" id="modalLRForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog cascading-modal" role="document">
+        <!--Content-->
+        <div class="modal-content">
+
+            <!--Modal cascading tabs-->
+            <div class="modal-c-tabs">
+
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs md-tabs tabs-2 light-blue darken-3" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" data-toggle="tab" href="#panel7" role="tab"><i
+                                class="fas fa-user mr-1"></i>
+                            Login</a>
+                    </li>
+                    <li class="nav-item" id="1">
+                        <a class="nav-link" data-toggle="tab" href="#panel8" role="tab"><i
+                                class="fas fa-user-plus mr-1"></i>
+                            Register</a>
+                    </li>
+                </ul>
+
+                <!-- Tab panels -->
+                <div class="tab-content">
+                    <!--Panel 7-->
+                    <div class="tab-pane fade in active" id="panel7" role="tabpanel">
+                        <!--Body-->
+                        <div class="modal-body mb-1">
+                            <div class="md-form form-sm mb-5">
+                                <i class="fas fa-envelope prefix"></i>
+                                <input type="email" id="modalLRInput10" class="form-control form-control-sm validate"
+                                       placeholder="your email">
+                            </div>
+
+                            <div class="md-form form-sm mb-4">
+                                <i class="fas fa-lock prefix"></i>
+                                <input type="password" id="modalLRInput11" class="form-control form-control-sm validate"
+                                       placeholder="your password">
+                            </div>
+                            <div class="text-center mt-2">
+                                <button class="btn btn-info">Log in <i class="fas fa-sign-in ml-1"></i></button>
+                            </div>
+                        </div>
+                        <!--Footer-->
+                        <div class="modal-footer">
+                            <div class="options text-center text-md-right mt-1">
+                                <p>Not a member? <a href="#" class="blue-text">Sign Up</a></p>
+                                <p>Forgot <a href="#" class="blue-text">Password?</a></p>
+                            </div>
+                            <button type="button" class="btn btn-outline-info waves-effect ml-auto"
+                                    data-dismiss="modal">Close
+                            </button>
+                        </div>
+
+                    </div>
+                    <!--/.Panel 7-->
+
+                    <!--Panel 8-->
+                    <div class="tab-pane fade " id="panel8" role="tabpanel">
+
+                        <!--Body-->
+                        <div class="modal-body">
+                            <div class="md-form form-sm mb-5">
+                                <i class="fas fa-envelope prefix"></i>
+                                <input type="email" id="modalLRInput12" class="form-control form-control-sm validate">
+                                <label data-error="wrong" data-success="right" for="modalLRInput12">Your email</label>
+                            </div>
+
+                            <div class="md-form form-sm mb-5">
+                                <i class="fas fa-lock prefix"></i>
+                                <input type="password" id="modalLRInput13"
+                                       class="form-control form-control-sm validate">
+                                <label data-error="wrong" data-success="right" for="modalLRInput13">Your
+                                    password</label>
+                            </div>
+
+                            <div class="md-form form-sm mb-4">
+                                <i class="fas fa-lock prefix"></i>
+                                <input type="password" id="modalLRInput14"
+                                       class="form-control form-control-sm validate">
+                                <label data-error="wrong" data-success="right" for="modalLRInput14">Repeat
+                                    password</label>
+                            </div>
+
+                            <div class="text-center form-sm mt-2">
+                                <button class="btn btn-info">Sign up <i class="fas fa-sign-in ml-1"></i></button>
+                            </div>
+
+                        </div>
+                        <!--Footer-->
+                        <div class="modal-footer">
+                            <div class="options text-right">
+                                <p class="pt-1">Already have an account? <a href="#" class="blue-text">Log In</a></p>
+                            </div>
+                            <button type="button" class="btn btn-outline-info waves-effect ml-auto"
+                                    data-dismiss="modal">
+                                Close
+                            </button>
+                        </div>
+                    </div>
+                    <!--/.Panel 8-->
+                </div>
+
+            </div>
+        </div>
+        <!--/.Content-->
+    </div>
+</div>
+<!--    ENG LOGIN/REGISTER-->
+<!-- navigation -->
+<div class="navigation-agileits" data-spy="affix" data-offset-top="197">
+    <div class="container">
+        <nav class="navbar navbar-default">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header nav_2">
+                <button type="button" class="navbar-toggle collapsed navbar-toggle1" data-toggle="collapse"
+                        data-target="#bs-megadropdown-tabs">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="index.html" class="active">Home</a></li>
+                    <!-- Mega Menu -->
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">luios vuitton<b
+                                class="caret"></b></a>
+                        <ul class="dropdown-menu multi-column columns-3">
+                            <div class="row">
+                                <div class="multi-gd-img">
+                                    <ul class="multi-column-dropdown">
+                                        <li><a href="#">men's wallet</a></li>
+                                        <li><a href="#">women's wallet</a></li>
+                                        <li><a href="#">men's purse</a></li>
+                                        <li><a href="#">women's purse</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Hermes<b class="caret"></b></a>
+                        <ul class="dropdown-menu multi-column columns-3">
+                            <div class="row">
+                                <div class="multi-gd-img">
+                                    <ul class="multi-column-dropdown">
+                                        <li><a href="#">men's wallet</a></li>
+                                        <li><a href="#">women's wallet</a></li>
+                                        <li><a href="#">men's purse</a></li>
+                                        <li><a href="#">women's purse</a></li>
+                                    </ul>
+                                </div>
+
+
+                            </div>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dior<b
+                                class="caret"></b></a>
+                        <ul class="dropdown-menu multi-column columns-3">
+                            <div class="row">
+                                <div class="multi-gd-img">
+                                    <ul class="multi-column-dropdown">
+                                        <li><a href="#">men's wallet</a></li>
+                                        <li><a href="#">women's wallet</a></li>
+                                        <li><a href="#">men's purse</a></li>
+                                        <li><a href="#">women's purse</a></li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">perdo<b
+                                class="caret"></b></a>
+                        <ul class="dropdown-menu multi-column columns-3">
+                            <div class="row">
+                                <div class="multi-gd-img">
+                                    <ul class="multi-column-dropdown">
+                                        <li><a href="#">men's wallet</a></li>
+                                        <li><a href="#">women's wallet</a></li>
+                                        <li><a href="#">men's purse</a></li>
+                                        <li><a href="#">women's purse</a></li>
+                                    </ul>
+                                </div>
+
+
+                            </div>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Gucci<b class="caret"></b></a>
+                        <ul class="dropdown-menu multi-column columns-3">
+                            <div class="row">
+                                <div class="multi-gd-img">
+                                    <ul class="multi-column-dropdown">
+                                        <li><a href="#">men's wallet</a></li>
+                                        <li><a href="#">women's wallet</a></li>
+                                        <li><a href="#">men's purse</a></li>
+                                        <li><a href="#">women's purse</a></li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </ul>
+                    </li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="#">Offers</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</div>
+
+<!-- //navigation -->
+<div class="container-fluid">
+    <div class="row text-center">
+        <div class="logocart">
+            <a href="/"><img src="https://www.vascara.com/templates/current/imagesv/logo-v1.png" alt="Về trang chủ Vascara"></a>
+        </div>
+        <p class="dieuhuong"><a href="/">Trang chủ</a> / Giỏ hàng</p>
+    </div>
+</div>
+<!-- ===================================content======================== -->
+<div class="container">
+    <div class="content slidesanphamsubcat">
+        <div class="empty-message">
+            <div class="row">
+                <div class="col-md-12">
+                    <h4>GIỎ HÀNG CỦA BẠN RỖNG</h4>
+                </div>
+            </div>
+        </div>
+        <script> var objProductList = [];</script>
+
+        <div class="row" style="margin-bottom: 100px;">
+            <div class="col-md-12">
+                <p class="text-center empty_cart_msg">Hiện tại không có sản phẩm nào trong giỏ hàng của bạn</p>
+                <p class="text-center">
+                    <a class="big_black_button" href="/">TIẾP TỤC MUA SẮM
+                        <span class="glyphicon glyphicon-menu-right"></span>
+                    </a>
+                </p>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- //footer -->
+<div class="footer">
+    <div class="container">
+        <div class="w3_footer_grids">
+            <div class="col-md-3 w3_footer_grid">
+                <h3>Information</h3>
+                <ul class="info">
+                    <li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="#">About Us</a></li>
+                    <li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="contact.html">Contact Us</a></li>
+                    <li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="short-codes.html">Short Codes</a>
+                    </li>
+                    <li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="faq.html">FAQ's</a></li>
+                    <li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="products.html">Special Products</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-3 w3_footer_grid">
+                <h3>Category</h3>
+                <ul class="info">
+                    <li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="groceries.html">Groceries</a></li>
+                    <li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="household.html">Household</a></li>
+                    <li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="personalcare.html">Personal
+                        Care</a></li>
+                    <li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="packagedfoods.html">Packaged
+                        Foods</a></li>
+                    <li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="beverages.html">Beverages</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 w3_footer_grid">
+                <h3>Profile</h3>
+                <ul class="info">
+                    <li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="products.html">Store</a></li>
+                    <li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="checkout.html">My Cart</a></li>
+                    <li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="login.html">Login</a></li>
+                    <li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="registered.html">Create Account</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-3 w3_footer_grid">
+                <h3>adress</h3>
+                <div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3833.9249735021585!2d108.22038801476208!3d16.06938264370236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31421833d5d51043%3A0x596a384ad09764ee!2zVMOyYSBOaMOgIFZOUFQgxJDDoCBO4bq1bmcsIDM4IFnDqm4gQsOhaSwgSOG6o2kgQ2jDonUgMSwgSOG6o2kgQ2jDonUsIMSQw6AgTuG6tW5nIDU1MDAwMCwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1573901486480!5m2!1svi!2s"
+                            width="250" height="185" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                </div>
+
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</div>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script type="text/javascript">
+
+    var __islogin = false;
+    var rooturl = "https://www.vascara.com/";
+    var rooturl_store = "https://www.vascara.com/";
+    var module = "store";
+    var currentTemplate = "https://www.vascara.com/templates/current/";
+    var imageDir = "https://www.vascara.com/templates/current/images/store/vascara/desktop/";
+    var currency = " VND";
+    var currencyprefix = "";
+    var uid = 0;
+    var myfullname = '';
+    var myavatar = 'https://www.vascara.com/templates/current/images/noavatar.png';
+    var loadspinner = '<img src="' + imageDir + 'spinner.gif" class="load-indicator" />';
+    var inlightbox = 0;
+</script>
+<script>
+    vasdataLayer = [{
+        'isLoggedin': 'false',
+        'locationname': ''
+    }];
+</script>
+
+<script src="https://www.vascara.com/templates/current/js/store/vascara/desktop/jquery-3.1.1.min.js?v=777" rel="stylesheet"></script>
+<script src="https://www.vascara.com/templates/current/js/store/vascara/desktop/bootstrap.min.js?v=777" rel="stylesheet"></script>
+<script src="https://www.vascara.com/templates/current/js/store/vascara/desktop/main.js?v=777" rel="stylesheet"></script>
+<script src="https://www.vascara.com/templates/current/js/store/vascara/desktop/backtop.js?v=777" rel="stylesheet"></script>
+<script src="https://www.vascara.com/templates/current/js/store/vascara/desktop/thirdparty.js?v=777" rel="stylesheet"></script>
+<script src="https://www.vascara.com/templates/current/js/store/vascara/desktop/tem.js?v=777" rel="stylesheet"></script>
+<script src="https://www.vascara.com/templates/current/js/store/vascara/desktop/menu.js?v=777" rel="stylesheet"></script>
+<script src="https://www.vascara.com/templates/current/js/store/vascara/desktop/view-bag.js?v=777" rel="stylesheet"></script>
+<script src="https://www.vascara.com/templates/current/js/store/vascara/desktop/numeral-with-locales.min.js?v=777" rel="stylesheet"></script>
+<script src="https://www.vascara.com/templates/current/js/store/vascara/desktop/productpage.js?v=777" rel="stylesheet"></script>
+<script src="https://www.vascara.com/templates/current/js/store/vascara/desktop/shadowbox.js?v=777" rel="stylesheet"></script>
+<script src="https://www.vascara.com/templates/current/js/store/vascara/desktop/toastr.js?v=777" rel="stylesheet"></script>
+<script src="https://www.vascara.com/templates/current/js/store/vascara/desktop/cart-checkout.js?v=777" rel="stylesheet"></script>
+<script src="https://www.vascara.com/templates/current/js/store/vascara/desktop/priceshipping.js?v=777" rel="stylesheet"></script>
+<script src="https://www.vascara.com/templates/current/js/store/vascara/desktop/jquery.cookie.js?v=777" rel="stylesheet"></script>
+
+<script type="text/javascript" src="https://www.vascara.com/templates/current/js/store/vascara/desktop/select2.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('#region').select2();
+        $('#region').change(function(){
+            $('.error-zone-promotion').html('');
+        });
+        //TayLQ check url
+        $path =window.location.pathname;
+        if($path.search("summer-sale-2017") >=0){
+            $('.change-region').css('background','rgba(9,0,0,0.9)');
+            var province = $("#region").val();
+            if(province>0){
+                var zoneid =getZone(province);
+                if(zoneid !=1){
+                    $('.error-zone-promotion').html('<span style="color:red">Chương trình chỉ áp dụng tại khu vực miền Bắc và Vinh, Huế, Hà Tĩnh.<br />Trường hợp bạn thuộc khu vực khác, vui lòng <a href="javascript:void(0)" onclick="backToHome()" style="color:blue"><b>quay lại trang chủ</b></a> để tiếp tục mua sắm.</span>');
+                    $('.change-region').show();
+                }
+            }
+        }
+        if($path.search("tuan-khuyen-mai-truc-tuyen-2017") >=0){
+            $('.change-region').css('background','rgba(9,0,0,0.9)');
+            var province = $("#region").val();
+            if(province>0){
+                var zoneid =getZone(province);
+                if(zoneid !=3){
+                    $('.error-zone-promotion').html('<span style="color:red">Khuyến mãi này chỉ áp dụng ở TP. Hồ Chí Minh. Vui lòng chọn lại tỉnh thành hoặc <a href="javascript:void(0)" onclick="backToHome()" style="color:blue"><b>quay lại trang chủ</b></a> để tiếp tục mua sắm.</span>');
+                    $('.change-region').show();
+                }
+            }
+        }
+        if($path.search("end-of-season-sale") >=0 || $path.search("mua-sam-thoi-trang-vascara-online") >=0){
+            $('.change-region').css('background','rgba(9,0,0,0.9)');
+            var province = $("#region").val();
+            if(province>0){
+                var zoneid =getZone(province);
+                if(zoneid !=3){
+                    $('.error-zone-promotion').html('<span style="color:red">Tỉnh thành bạn chọn không được áp dụng chương trình này. Vui lòng chọn lại tỉnh thành.<br />Tham khảo các <a href="javascript:void(0)" onclick="goToSaleOffPage()" style="color:blue"><b>sản phẩm được ưu đãi giá</b></a> hoặc <a href="javascript:void(0)" onclick="backToHome()" style="color:blue"><b>quay lại trang chủ</b></a> để tiếp tục mua sắm.</span>');
+                    $('.change-region').show();
+                    setTimeout(function(){
+                        $('.error-zone-promotion').html('');
+                        $('.change-region').hide();
+                        window.location.href = "/vascara-sale-off";
+                    }, 6000);
+                }
+            }
+        }
+    });
+    function getZone($provinceid){
+        var zonepromotion =[];
+        var zone =0;
+        if(!$.isEmptyObject(zonepromotion)){
+            $.each(zonepromotion, function (zoneid, province) {
+                $.each(province, function (k, val) {
+                    if(val == $provinceid){
+                        zone =zoneid;
+                        return;
+                    }
+                });
+            });
+        }
+        return zone;
+    }
+    function backToHome(){
+        $('.error-zone-promotion').html('');
+        $('.change-region').hide();
+        window.location.href = "/";
+    }
+
+    function goToSaleOffPage(){
+        $('.error-zone-promotion').html('');
+        $('.change-region').hide();
+        window.location.href = "/vascara-sale-off";
+    }
+
+    $('#btn_select_province').click(function(){
+        var province = $('#region').val();
+        if(Number(province) >0){
+            $('.pp-submit-error').hide();
+            $.ajax({
+                type: 'POST',
+                url:  rooturl_store + 'index/checkprovince',
+                dataType: 'json',
+                data: 'province='+province,
+                error: function() {},
+                beforeSend: function(){
+                    $(".cls_loader").css('display','flex');
+                },
+                success: function(json){
+                    if(json.suc){
+                        $path =window.location.pathname;
+                        if($path.search("summer-sale-2017") >=0){
+                            var zoneid =getZone(province);
+                            if(zoneid !=1){
+                                $('.error-zone-promotion').html('<span style="color:red">Chương trình chỉ áp dụng tại khu vực miền Bắc và Vinh, Huế, Hà Tĩnh.<br />Trường hợp bạn thuộc khu vực khác, vui lòng <a href="javascript:void(0)" onclick="backToHome()" style="color:blue"><b>quay lại trang chủ</b></a> để tiếp tục mua sắm.</span>');
+                                $('.change-region').show();
+                            }else{
+                                $('.error-zone-promotion').html('');
+                                $('.change-region').hide();
+                                location.reload(true);
+                            }
+                        }else if($path.search("tuan-khuyen-mai-truc-tuyen-2017") >=0){
+                            var zoneid =getZone(province);
+                            if(zoneid !=3){
+                                $('.error-zone-promotion').html('Khuyến mãi này chỉ áp dụng ở TP. Hồ Chí Minh. Vui lòng chọn lại tỉnh thành hoặc <a href="javascript:void(0)" onclick="backToHome()" style="color:blue"><b>quay về trang chủ</b></a> để tiếp tục mua sắm.');
+                                $('.change-region').show();
+                            }else{
+                                $('.error-zone-promotion').html('');
+                                $('.change-region').hide();
+                                location.reload(true);
+                            }
+                        }else if($path.search("end-of-season-sale") >=0 || $path.search("mua-sam-thoi-trang-vascara-online") >=0){
+                            var zoneid =getZone(province);
+                            if(zoneid !=3){
+                                $('.error-zone-promotion').html('<span style="color:red">Tỉnh thành bạn chọn không được áp dụng chương trình này. Vui lòng chọn lại tỉnh thành.<br />Tham khảo các <a href="javascript:void(0)" onclick="goToSaleOffPage()" style="color:blue"><b>sản phẩm được ưu đãi giá</b></a> hoặc <a href="javascript:void(0)" onclick="backToHome()" style="color:blue"><b>quay lại trang chủ</b></a> để tiếp tục mua sắm.</span>');
+                                $('.change-region').show();
+                                setTimeout(function(){
+                                    $('.error-zone-promotion').html('');
+                                    $('.change-region').hide();
+                                    window.location.href = "/vascara-sale-off";
+                                }, 6000);
+                            }else{
+                                $('.error-zone-promotion').html('');
+                                $('.change-region').hide();
+                                location.reload(true);
+                            }
+                        }else{
+                            $('.change-region').hide();
+                            if(json.isdiscoupon ==1){
+                                alert('Giá, khuyến mãi đã thay đổi theo khu vực bạn chọn. Vui lòng nhập lại Coupon.');
+                            }
+                            if(json.isdisvip ==1){
+                                alert('Giá, khuyến mãi đã thay đổi theo khu vực bạn chọn. Vui lòng nhập lại Vip.');
+                            }
+                            location.reload(true);
+                        }
+                    }else{
+                        $('.pp-submit-error').show();
+                    }
+                },
+                complete: function(){
+                    $(".cls_loader").css('display','none');
+                }
+            });
+        }else{
+            $('.pp-submit-error').show();
+        }
+    });
+</script>
+<input type="hidden" name="fwishlisttoken" id="fwishlisttoken" value="ff75a812a981e7a253bab0a1dc9bf380">
+<script type="text/javascript">
+    if(typeof(Storage) !== 'undefined'){
+        (function($){
+            data = {
+                'fpid' : $('#productId').val(),
+                'ftoken' : $('#fwishlisttoken').val()
+            }
+            $.fn.ilvd = function(){
+                $(this).on('click',function(){
+                    data['fpid'] = $(this).attr('data-value');
+                    if (!$(this).hasClass('active')) {
+                        addwishlist($(this));
+                    }else{
+                        removewishlist($(this));
+                    }
+                })
+            }
+            removewishlist = function(that){
+                $.ajax({
+                    type: "POST",
+                    dataType: 'json',
+                    data : data,
+                    url: rooturl_store + 'wishlist/removev2',
+                    error: function() {
+
+                    },
+                    success: function(json) {
+                        if (json.success == 1) {
+                            var abc = localStorage.getItem('ilike');
+                            abc = JSON.parse(abc);
+                            var bca = false;
+                            for (key in abc) {
+                                if (abc[key] == data.fpid) {
+                                    abc.splice(key,1);
+                                    bca = true;
+                                }
+                            }
+                            if (bca && abc != '')
+                            {
+                                localStorage.setItem('ilike','['+abc+']');
+
+                            }else if( abc == '')
+                            {
+                                localStorage.removeItem('ilike');
+                            }
+                            var totallove =parseInt($('.sub-wl').text(),10);
+                            if(totallove > 0){
+                                totallove = totallove - 1;
+                                $('.sub-wl').html(totallove);
+                            }
+
+                            that.removeClass('active');
+                        } else {
+
+                            notify(json.message.replace(/\|/g, '\r\n'), 'warning');
+
+                        }
+                    }
+                });
+
+            }
+            addwishlist = function(that){
+                $.ajax({
+                    type: "POST",
+                    dataType: 'json',
+                    data : data,
+                    url: rooturl_store + 'wishlist/addajax',
+                    error: function() {
+                        // myThis.elements.elSaveLike.html('<img src="'+currentTemplate+'imagedetailproduct/traitim.png" alt="">');
+                    },
+                    success: function(json) {
+                        if (json.success == 1) {
+                            if (localStorage.getItem('ilike') == null) {
+                                localStorage.setItem('ilike','['+data.fpid+']');
+                            }
+                            else{
+                                var abc = localStorage.getItem('ilike');
+                                abc = JSON.parse(abc);
+                                var bca = false;
+                                for (key in abc) {
+                                    if (abc[key] == data.fpid) {
+                                        abc.splice(key,1);
+                                        bca = true;
+                                    }
+                                }
+                                if (!bca) {
+                                    abc.push(data.fpid);
+                                    localStorage.setItem('ilike','['+abc+']');
+                                }else{
+                                    localStorage.setItem('ilike','['+abc+']');
+                                }
+                            }
+                            that.addClass('active');
+                            var totallove =parseInt($('.sub-wl').text(),10);
+                            totallove = totallove + 1;
+                            $('.sub-wl').html(totallove);
+                            // notify(json.message, 'success');
+                        } else {
+                            that.removeClass('active');
+                            notify(json.message.replace(/\|/g, '\r\n'), 'warning');
+                        }
+
+                    }
+                });
+            }
+        }(jQuery));
+        var abcd = localStorage.getItem('ilike');
+        if(abcd != '')
+            abcd = JSON.parse(abcd);
+        for(key in abcd){
+            if($('#productId').val() == abcd[key]){
+                $('.fa-heart').addClass('active');
+            }
+        }
+        $('.ilikes').each(function(){
+            for(key in abcd){
+                if($(this).attr('data-value') == abcd[key]){
+                    $(this).addClass('active')
+                }
+            }
+
+        })
+        $('.ilikes').ilvd();
+    }
+    else
+    {
+        alert('trinh duyet khong ho tro');
+    }
+    //bấm nút chọn màu thành hình tương ứng
+    $("html").on( "click", ".btnc", function() {
+        data1 = {
+            'fpid' : $(this).find('input').attr('data-op'),
+            'ftoken' : $(this).find('input').val()
+        }
+        $.ajax({
+            type: 'POST',
+            url:  rooturl_store + 'product/getImagebyoptioncolor',
+            dataType: 'json',
+            data: data1,
+            error: function() {
+
+            },
+            success: function(json){
+                console.log('#img'+ data1.ftoken);
+                $('#img'+ data1.ftoken).attr('src',json);
+            }
+        });
+    })
+
+</script>
+
+</body>
+</html>

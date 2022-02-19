@@ -1,0 +1,57 @@
+[
+  {
+    "id": "1",
+    "imgSrc": "imgs/c1.png",
+    "name": "LV Alex Backpack",
+
+    "priceSale": "1 560,00€",
+    "price": "1 860,00€",
+    "size": "46cm x 52cm x 58cm",
+    "info": "Fashioned from full-grain Taurillon leather, this Capucines BB handbag displays all the unmistakable features of the New Classic designed by Nicolas Ghesquière: a leather-wrapped LV signature, jewel-like side rings and a distinctive flap closure that can be worn inside or out. Timelessly elegant in classic Black with new ruthenium-metal hardware, it offers multiple carry options, thanks to a top handle and detachable leather strap."
+  },
+  {
+    "id": "2",
+    "imgSrc": "imgs/h4.png",
+    "name": "LV Alex Messenger PM",
+    "priceSale": "1 260,00€",
+    "size": "46cm x 52cm x 58cm",
+    "info": "Fashioned from full-grain Taurillon leather, this Capucines BB handbag displays all the unmistakable features of the New Classic designed by Nicolas Ghesquière: a leather-wrapped LV signature, jewel-like side rings and a distinctive flap closure that can be worn inside or out. Timelessly elegant in classic Black with new ruthenium-metal hardware, it offers multiple carry options, thanks to a top handle and detachable leather strap.",
+    "price": ""
+  },
+  {
+    "id": "3",
+    "imgSrc": "imgs/d6.png",
+    "name": "LV Mylockme Chain Pochette",
+    "priceSale": "1 099,00€",
+    "info": "Fashioned from full-grain Taurillon leather, this Capucines BB handbag displays all the unmistakable features of the New Classic designed by Nicolas Ghesquière: a leather-wrapped LV signature, jewel-like side rings and a distinctive flap closure that can be worn inside or out. Timelessly elegant in classic Black with new ruthenium-metal hardware, it offers multiple carry options, thanks to a top handle and detachable leather strap.",
+    "size": "46cm x 52cm x 58cm",
+    "price": "1 299,00€"
+  },
+  {
+    "id": "4",
+    "imgSrc": "imgs/h8.png",
+    "name": "LV Porte Documents Voyage",
+    "priceSale": "2 000,00€",
+    "size": "46cm x 52cm x 58cm",
+    "info": "Fashioned from full-grain Taurillon leather, this Capucines BB handbag displays all the unmistakable features of the New Classic designed by Nicolas Ghesquière: a leather-wrapped LV signature, jewel-like side rings and a distinctive flap closure that can be worn inside or out. Timelessly elegant in classic Black with new ruthenium-metal hardware, it offers multiple carry options, thanks to a top handle and detachable leather strap.",
+    "price": ""
+  },
+  {
+    "id": "5",
+    "imgSrc": "imgs/c7.png",
+    "name": "LV Rose Des Vents MM",
+    "priceSale": "2 150,00€",
+    "info": "Fashioned from full-grain Taurillon leather, this Capucines BB handbag displays all the unmistakable features of the New Classic designed by Nicolas Ghesquière: a leather-wrapped LV signature, jewel-like side rings and a distinctive flap closure that can be worn inside or out. Timelessly elegant in classic Black with new ruthenium-metal hardware, it offers multiple carry options, thanks to a top handle and detachable leather strap.",
+    "size": "46cm x 52cm x 58cm",
+    "price": "2 350,00€"
+  },
+  {
+    "id": "6",
+    "imgSrc": "imgs/c2.png",
+    "name": "LV Boite Chapeau Souple",
+    "priceSale": "1 660,00€",
+    "size": "46cm x 52cm x 58cm",
+    "info": "Fashioned from full-grain Taurillon leather, this Capucines BB handbag displays all the unmistakable features of the New Classic designed by Nicolas Ghesquière: a leather-wrapped LV signature, jewel-like side rings and a distinctive flap closure that can be worn inside or out. Timelessly elegant in classic Black with new ruthenium-metal hardware, it offers multiple carry options, thanks to a top handle and detachable leather strap.",
+    "price": ""
+  }
+]

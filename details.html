@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Product Details</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/details.css">
+    <link rel="stylesheet" href="css/Homepage.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/494029ebc7.js" crossorigin="anonymous"></script>
+    <script src="javascript/nav.js"></script>
+    <script src="js/details.js"></script>
+
+<body>
+<!-- header -->
+<div class="agileits_header">
+    <div class="container">
+        <div class="w3l_offers">
+            <p>SALE UP TO 5% OFF. USE CODE "SALE10%" . <a href="#">SHOP NOW</a></p>
+        </div>
+        <div class="agile-login">
+            <ul>
+                <li><a href="#" class=" my-3" data-toggle="modal" data-target="#modalLRForm">LogIn/Register</a></li>
+                <li><a href="#">Help</a></li>
+
+            </ul>
+        </div>
+        <div class="product_list_header">
+            <form action="#" method="post" class="last">
+                <input type="hidden" name="cmd" value="_cart">
+                <input type="hidden" name="display" value="1">
+            </form>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+</div>
+
+<div class="logo_products">
+    <div class="container">
+        <div class="w3ls_logo_products_left1">
+            <ul class="phone_email">
+                <li><i class="fa fa-phone" aria-hidden="true"></i>Order online or call us : (+0123) 234 567</li>
+
+            </ul>
+        </div>
+        <div class="w3ls_logo_products_left">
+            <a href="index.html"><img src="imgs/Logo.jpg" alt="LOGO"
+                                      style="margin-top :-25px; margin-bottom: -20px"></a>
+        </div>
+        <div class="w3l_search">
+            <form action="#" method="post">
+                <input type="search" name="Search" placeholder="Search for a Product..." required="">
+                <button type="submit" class="btn btn-default search" aria-label="Left Align">
+                    <i class="fa fa-search" aria-hidden="true"> </i>
+                </button>
+                <div class="clearfix"></div>
+            </form>
+        </div>
+
+        <div class="clearfix"></div>
+    </div>
+</div>
+<!-- //header -->
+<!--        LOGIN/REGISTER-->
+<!--Modal: Login / Register Form-->
+<div class="modal fade" id="modalLRForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog cascading-modal" role="document">
+        <!--Content-->
+        <div class="modal-content">
+
+            <!--Modal cascading tabs-->
+            <div class="modal-c-tabs">
+
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs md-tabs tabs-2 light-blue darken-3" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" data-toggle="tab" href="#panel7" role="tab"><i
+                                class="fas fa-user mr-1"></i>
+                            Login</a>
+                    </li>
+                    <li class="nav-item" id="1">
+                        <a class="nav-link" data-toggle="tab" href="#panel8" role="tab"><i
+                                class="fas fa-user-plus mr-1"></i>
+                            Register</a>
+                    </li>
+                </ul>
+
+                <!-- Tab panels -->
+                <div class="tab-content">
+                    <!--Panel 7-->
+                    <div class="tab-pane fade in active" id="panel7" role="tabpanel">
+                        <!--Body-->
+                        <div class="modal-body mb-1">
+                            <div class="md-form form-sm mb-5">
+                                <i class="fas fa-envelope prefix"></i>
+                                <input type="email" id="modalLRInput10" class="form-control form-control-sm validate"
+                                       placeholder="your email">
+                            </div>
+
+                            <div class="md-form form-sm mb-4">
+                                <i class="fas fa-lock prefix"></i>
+                                <input type="password" id="modalLRInput11" class="form-control form-control-sm validate"
+                                       placeholder="your password">
+                            </div>
+                            <div class="text-center mt-2">
+                                <button class="btn btn-info">Log in <i class="fas fa-sign-in ml-1"></i></button>
+                            </div>
+                        </div>
+                        <!--Footer-->
+                        <div class="modal-footer">
+                            <div class="options text-center text-md-right mt-1">
+                                <p>Not a member? <a href="#" class="blue-text">Sign Up</a></p>
+                                <p>Forgot <a href="#" class="blue-text">Password?</a></p>
+                            </div>
+                            <button type="button" class="btn btn-outline-info waves-effect ml-auto"
+                                    data-dismiss="modal">Close
+                            </button>
+                        </div>
+
+                    </div>
+                    <!--/.Panel 7-->
+
+                    <!--Panel 8-->
+                    <div class="tab-pane fade " id="panel8" role="tabpanel">
+
+                        <!--Body-->
+                        <div class="modal-body">
+                            <div class="md-form form-sm mb-5">
+                                <i class="fas fa-envelope prefix"></i>
+                                <input type="email" id="modalLRInput12" class="form-control form-control-sm validate">
+                                <label data-error="wrong" data-success="right" for="modalLRInput12">Your email</label>
+                            </div>
+
+                            <div class="md-form form-sm mb-5">
+                                <i class="fas fa-lock prefix"></i>
+                                <input type="password" id="modalLRInput13"
+                                       class="form-control form-control-sm validate">
+                                <label data-error="wrong" data-success="right" for="modalLRInput13">Your
+                                    password</label>
+                            </div>
+
+                            <div class="md-form form-sm mb-4">
+                                <i class="fas fa-lock prefix"></i>
+                                <input type="password" id="modalLRInput14"
+                                       class="form-control form-control-sm validate">
+                                <label data-error="wrong" data-success="right" for="modalLRInput14">Repeat
+                                    password</label>
+                            </div>
+
+                            <div class="text-center form-sm mt-2">
+                                <button class="btn btn-info">Sign up <i class="fas fa-sign-in ml-1"></i></button>
+                            </div>
+
+                        </div>
+                        <!--Footer-->
+                        <div class="modal-footer">
+                            <div class="options text-right">
+                                <p class="pt-1">Already have an account? <a href="#" class="blue-text">Log In</a></p>
+                            </div>
+                            <button type="button" class="btn btn-outline-info waves-effect ml-auto"
+                                    data-dismiss="modal">
+                                Close
+                            </button>
+                        </div>
+                    </div>
+                    <!--/.Panel 8-->
+                </div>
+
+            </div>
+        </div>
+        <!--/.Content-->
+    </div>
+</div>
+<!--    ENG LOGIN/REGISTER-->
+<!-- navigation -->
+<div class="navigation-agileits" data-spy="affix" data-offset-top="197">
+    <div class="container">
+        <nav class="navbar navbar-default">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header nav_2">
+                <button type="button" class="navbar-toggle collapsed navbar-toggle1" data-toggle="collapse"
+                        data-target="#bs-megadropdown-tabs">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <!-- Mega Menu -->
+                    <li class="dropdown">
+                        <a href="productsLV.html" class="dropdown-toggle" data-toggle="dropdown">Louis Vuitton<b
+                                class="caret"></b></a>
+                        <ul class="dropdown-menu multi-column columns-3">
+                            <div class="row">
+                                <div class="multi-gd-img">
+                                    <ul class="multi-column-dropdown">
+                                        <li><a href="#">Men's Wallet</a></li>
+                                        <li><a href="#">Women's Wallet</a></li>
+                                        <li><a href="#">Men's Purse</a></li>
+                                        <li><a href="#">Women's Purse</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="productsHM.html" class="dropdown-toggle" data-toggle="dropdown">Hermes<b class="caret"></b></a>
+                        <ul class="dropdown-menu multi-column columns-3">
+                            <div class="row">
+                                <div class="multi-gd-img">
+                                    <ul class="multi-column-dropdown">
+                                        <li><a href="#">Men's Wallet</a></li>
+                                        <li><a href="#">Women's Wallet</a></li>
+                                        <li><a href="#">Men's Purse</a></li>
+                                        <li><a href="#">Women's Purse</a></li>
+                                    </ul>
+                                </div>
+
+
+                            </div>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="productsDior.html" class="dropdown-toggle" data-toggle="dropdown">Dior<b
+                                class="caret"></b></a>
+                        <ul class="dropdown-menu multi-column columns-3">
+                            <div class="row">
+                                <div class="multi-gd-img">
+                                    <ul class="multi-column-dropdown">
+                                        <li><a href="#">Men's Wallet</a></li>
+                                        <li><a href="#">Women's Wallet</a></li>
+                                        <li><a href="#">Men's Purse</a></li>
+                                        <li><a href="#">Women's Purse</a></li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Perdo<b
+                                class="caret"></b></a>
+                        <ul class="dropdown-menu multi-column columns-3">
+                            <div class="row">
+                                <div class="multi-gd-img">
+                                    <ul class="multi-column-dropdown">
+                                        <li><a href="#">Men's Wallet</a></li>
+                                        <li><a href="#">Women's Wallet</a></li>
+                                        <li><a href="#">Men's Purse</a></li>
+                                        <li><a href="#">Women's Purse</a></li>
+                                    </ul>
+                                </div>
+
+
+                            </div>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="productsGC.html" class="dropdown-toggle" data-toggle="dropdown">Gucci<b class="caret"></b></a>
+                        <ul class="dropdown-menu multi-column columns-3">
+                            <div class="row">
+                                <div class="multi-gd-img">
+                                    <ul class="multi-column-dropdown">
+                                        <li><a href="#">Men's Wallet</a></li>
+                                        <li><a href="#">Women's Wallet</a></li>
+                                        <li><a href="#">Men's Purse</a></li>
+                                        <li><a href="#">Women's Purse</a></li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </ul>
+                    </li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="contact.html">Contact US</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</div>
+
+<!-- //navigation -->
+<section>
+    <div class="container">
+        <div class="card">
+            <div class="container-fliud">
+                <div class="wrapper row">
+                    <div class="preview col-md-2 col-sm-3 col-xs-3">
+                        <div class="tab-pane" id="pic-4"><img src="imgs/pr.png" alt="">
+                        </div>
+                        <div class="tab-pane" id="pic-2"><img src="imgs/pr1.png" alt="">
+                        </div>
+                        <div class="tab-pane" id="pic-3"><img src="imgs/pr2.png" alt="">
+                        </div>
+                    </div>
+                    <div class="preview col-md-5 col-sm-9 col-xs-9">
+                        <div class="preview-pic">
+                            <div class="tab-pane active thumbnail" id="pic-1" style="border: none;"><img id="pic-11"
+                                                                         src="#"
+                                                                         alt="" >
+                            </div>
+                        </div>
+                        <div class="btn1">
+                            <div class="action">
+                                <a href="#">
+                                    <button class="add-to-cart btn btn-default" type="button">BUY NOW</button>
+                                </a>
+                                <a href="#">
+                                    <button class="like btn btn-default" type="button"><span> ADD TO CART</span>
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="details col-md-5 ">
+                        <h3 class="product-title" id="product-name"></h3>
+                        <a href="doc/Details.docx" download="doc/Details.docx">Download Details</a>
+                        <div class="rating">
+                            <div class="stars">  <i class="fa fa-star blue-star" aria-hidden="true"></i>
+                                <i class="fa fa-star blue-star" aria-hidden="true"></i>
+                                <i class="fa fa-star blue-star" aria-hidden="true"></i>
+                                <i class="fa fa-star blue-star" aria-hidden="true"></i>
+                                <i class="fa fa-star gray-star" aria-hidden="true"></i>
+                            </div>
+                            <span class="review-no">157 evaluate</span>
+                        </div>
+                        <p class="product-description" id="product-info"></p>
+                        <h4 class="price" id="product-price"></h4>
+                        <p class="vote"><strong>91%</strong> Buyers are satisfied with this product<strong>(87
+                            voted)</strong>
+                        </p>
+                        <h5 class="sizes">Size: <span class="size" data-toggle="tooltip" title="small" id="product-size"></span>
+                        </h5>
+                        <h5 class="colors">Color: <span class="color orange not-available" data-toggle="tooltip"
+                                                        title="Not In store"></span> <span
+                                class="color green"></span>
+                            <span class="color blue"></span>
+                        </h5>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <h2>
+            <span class="page-heading-title">SIMILARITY PRODUCT</span>
+        </h2>
+        <div class="row">
+            <div id="sp1" class="col-md-3 col-sm-3 col-xs-1 top_brand_left">
+                <div class="hover14 column">
+                    <div class="agile_top_brand_left_grid">
+                        <div class="agile_top_brand_left_grid_pos">
+                            <img src="imgs/offer.png" alt=" " class="img-responsive">
+                        </div>
+                        <div class="agile_top_brand_left_grid1">
+                            <figure>
+                                <div class="snipcart-item block">
+                                    <div class="snipcart-thumb">
+                                        <a href="products.html"><img title=" " alt=" "
+                                                                     src="imgs/lv1.png"
+                                                                     style="width: 150px; height: 150px"/></a>
+                                        <p style="text-align: center">CABAS VOYAGE</p>
+                                        <div class="stars">
+                                            <i class="fa fa-star blue-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star blue-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star blue-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star blue-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star gray-star" aria-hidden="true"></i>
+                                        </div>
+                                        <h4 style="text-align: center">1 650,00€</h4>
+                                    </div>
+                                    <div class="snipcart-details top_brand_home_details">
+                                        <form action="#" method="post">
+                                            <fieldset>
+
+                                                <input type="submit" name="submit" value="Add to cart"
+                                                       class="button"/>
+                                            </fieldset>
+                                        </form>
+                                    </div>
+                                </div>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div  id="sp2" class="col-md-3 col-sm-3 col-xs-1 top_brand_left">
+                <div class="hover14 column">
+                    <div class="agile_top_brand_left_grid">
+                        <div class="agile_top_brand_left_grid_pos">
+                            <img src="imgs/offer.png" alt=" " class="img-responsive">
+                        </div>
+                        <div class="agile_top_brand_left_grid1">
+                            <figure>
+                                <div class="snipcart-item block">
+                                    <div class="snipcart-thumb">
+                                        <a href="products.html"><img title=" " alt=" "
+                                                                     src="imgs/d6.png"
+                                                                     style="width: 150px; height: 150px"/></a>
+                                        <p style="text-align: center">AVENUE SLING BAG</p>
+                                        <div class="stars">
+                                            <i class="fa fa-star blue-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star blue-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star blue-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star blue-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star gray-star" aria-hidden="true"></i>
+                                        </div>
+                                        <h4 style="text-align: center">1 250,00€</h4>
+                                    </div>
+                                    <div class="snipcart-details top_brand_home_details">
+                                        <form action="#" method="post">
+                                            <fieldset>
+
+                                                <input type="submit" name="submit" value="Add to cart"
+                                                       class="button"/>
+                                            </fieldset>
+                                        </form>
+                                    </div>
+                                </div>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-3 hidden-xs top_brand_left">
+                <div class="hover14 column">
+                    <div class="agile_top_brand_left_grid">
+                        <div class="agile_top_brand_left_grid_pos">
+                            <img src="imgs/offer.png" alt=" " class="img-responsive">
+                        </div>
+                        <div class="agile_top_brand_left_grid1">
+                            <figure>
+                                <div class="snipcart-item block">
+                                    <div class="snipcart-thumb">
+                                        <a href="products.html"><img title=" " alt=" "
+                                                                     src="imgs/h6.png"
+                                                                     style="width: 150px; height: 150px"/></a>
+                                        <p style="text-align: center">STEAMER PM</p>
+                                        <div class="stars">
+                                            <i class="fa fa-star blue-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star blue-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star blue-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star blue-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star gray-star" aria-hidden="true"></i>
+                                        </div>
+                                        <h4 style="text-align: center">1 450,00€</h4>
+                                    </div>
+                                    <div class="snipcart-details top_brand_home_details">
+                                        <form action="#" method="post">
+                                            <fieldset>
+
+                                                <input type="submit" name="submit" value="Add to cart"
+                                                       class="button"/>
+                                            </fieldset>
+                                        </form>
+                                    </div>
+                                </div>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 hidden-sm hidden-xs top_brand_left">
+                <div class="hover14 column">
+                    <div class="agile_top_brand_left_grid">
+                        <div class="agile_top_brand_left_grid_pos">
+                            <img src="imgs/offer.png" alt=" " class="img-responsive">
+                        </div>
+                        <div class="agile_top_brand_left_grid1">
+                            <figure>
+                                <div class="snipcart-item block">
+                                    <div class="snipcart-thumb">
+                                        <a href="products.html"><img title=" " alt=" "
+                                                                     src="imgs/c7.png"
+                                                                     style="width: 150px; height: 150px"/></a>
+                                        <p style="text-align: center">SOFT TRUNK</p>
+                                        <div class="stars">
+                                            <i class="fa fa-star blue-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star blue-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star blue-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star blue-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star gray-star" aria-hidden="true"></i>
+                                        </div>
+                                        <h4 style="text-align: center">2 450,00€</h4>
+                                    </div>
+                                    <div class="snipcart-details top_brand_home_details">
+                                        <form action="#" method="post">
+                                            <fieldset>
+
+                                                <input type="submit" name="submit" value="Add to cart"
+                                                       class="button"/>
+                                            </fieldset>
+                                        </form>
+                                    </div>
+                                </div>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- //footer -->
+<div class="footer">
+    <div class="container">
+        <div class="w3_footer_grids">
+            <div class="col-md-3 w3_footer_grid">
+                <h3>Information</h3>
+                <ul class="info">
+                    <li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="about.html">About Us</a></li>
+                    <li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="contact.html">Contact Us</a></li>
+                    <li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="short-codes.html">Short Codes</a>
+                    </li>
+                    <li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="faq.html">FAQ's</a></li>
+                    <li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="products.html">Special Products</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-3 w3_footer_grid">
+                <h3>Category</h3>
+                <ul class="info">
+                    <li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="groceries.html">Groceries</a></li>
+                    <li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="household.html">Household</a></li>
+                    <li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="personalcare.html">Personal
+                        Care</a></li>
+                    <li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="packagedfoods.html">Packaged
+                        Foods</a></li>
+                    <li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="beverages.html">Beverages</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 w3_footer_grid">
+                <h3>Profile</h3>
+                <ul class="info">
+                    <li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="products.html">Store</a></li>
+                    <li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="checkout.html">My Cart</a></li>
+                    <li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="login.html">Login</a></li>
+                    <li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="registered.html">Create Account</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-3 w3_footer_grid">
+                <h3>adress</h3>
+                <div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3833.9249735021585!2d108.22038801476208!3d16.06938264370236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31421833d5d51043%3A0x596a384ad09764ee!2zVMOyYSBOaMOgIFZOUFQgxJDDoCBO4bq1bmcsIDM4IFnDqm4gQsOhaSwgSOG6o2kgQ2jDonUgMSwgSOG6o2kgQ2jDonUsIMSQw6AgTuG6tW5nIDU1MDAwMCwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1573901486480!5m2!1svi!2s"
+                            width="250" height="185" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                </div>
+
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+
+
+</div>
+<div class="footer-botm">
+    <div class="container">
+        <div class="w3layouts-foot">
+            <ul>
+                <li><a href="#" class="w3_agile_facebook"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="#" class="agile_twitter"><i class="fab fa-twitter-square"></i></a></li>
+                <li><a href="#" class="w3_agile_dribble"><i class="fab fa-dribbble-square"></i></i></a></li>
+                <li><a href="#" class="w3_agile_vimeo"><i class="fab fa-vimeo-square"></i></a></li>
+            </ul>
+        </div>
+        <div class="payment-w3ls">
+            <img src="imgs/card.png" alt=" " class="img-responsive">
+        </div>
+        <div class="clearfix"></div>
+    </div>
+</div>
+<!-- //footer -->
+
+<!--Scroll to top-->
+<div class="scroll-top-wrapper ">
+  <span class="scroll-top-inner" title="Go to top">
+    <i class="glyphicon glyphicon-upload"></i>
+  </span>
+</div>
+</body>
+</html>

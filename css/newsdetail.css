@@ -1,0 +1,21 @@
+.container .banner1{
+    background-image: url(../imgs/crm.png);
+    width: 105.3%;
+    margin-top: -19px;
+    /* padding-left: 47px; */
+    /* padding-top: 50px; */
+    padding: 100px;
+    /*padding-right: 350px;*/
+}
+.slogan{
+    font-weight: bold;
+    font-size: 35px;
+    font-family: 'Charm', cursive;
+}
+.h1{
+    font-size: 68px;
+    color: red;
+}
+.slogan ul{
+    font-size: 25px;
+}

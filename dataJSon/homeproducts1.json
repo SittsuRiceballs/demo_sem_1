@@ -1,0 +1,46 @@
+[
+  {
+    "id" : "1",
+    "imgSrc": "imgs/h4.png",
+    "name": "SOFT TRUNK",
+    "priceSale": "2 400,00€",
+    "price": "555"
+  },
+  {
+    "id" : "2",
+    "imgSrc": "imgs/c1.png",
+    "name": "STEAMER PM",
+    "priceSale": "2 700,00€",
+    "price": ""
+  },
+  {
+    "id" : "3",
+    "imgSrc": "imgs/c2.png",
+    "name": "CABAS VOYAGE",
+    "priceSale": "1 890,00€",
+    "price": ""
+  },
+  {
+    "id" : "4",
+    "imgSrc": "imgs/d1.png",
+    "name": "ROMAN PM",
+    "priceSale": "1 540,00€",
+    "price": ""
+  },
+  {
+    "id" : "5",
+    "imgSrc": "imgs/h2.png",
+    "name": "AVENUE SLING BAG",
+    "priceSale": "1 020,00€",
+    "price": ""
+  },
+  {
+    "id" : "6",
+    "imgSrc": "imgs/lv1.png",
+    "name": "DISCOVERY BUMBAG",
+    "priceSale": "1 170,00€",
+    "price": ""
+  }
+
+
+]

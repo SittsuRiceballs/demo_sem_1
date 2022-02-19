@@ -1,0 +1,57 @@
+[
+  {
+    "id": "1",
+    "imgSrc": "imgs/pr.png",
+    "name": "DISCOVERY BACKPACK PM",
+    "price": "1 650,00€",
+    "priceSale": "1 250,00€",
+    "size": "37.0 x 40.0 x 20.0 cm",
+    "info": "In the Discovery Backpack PM, Louis Vuitton turns the archetypal college bag into a fashion accessory. Its design combines supple Taïga leather with iconic Monogram canvas. The piece is finished with practical features including adjustable straps, an iPad pocket and two other interior compartments. Taïga cowhide leather and Monogram Eclipse coated canvas.Cowhide-leather trim. Textile lining. Silver-colour hardware. Two adjustable back straps.Top handle. Two inside flat pockets. Inside iPad pocket. Zip closure. Front zipped compartment."
+
+  },
+  {
+    "id": "2",
+    "imgSrc": "imgs/ps2.png",
+    "name": "CHALK SLING BAG",
+    "priceSale": "1 100,00€",
+    "size": "46cm x 52cm x 58cm",
+    "info": "Practical and stylish, the Chalk Sling Bag is decorated with an eye-catching all-over Monogram motif. Its design is inspired by the pouches that mountain climbers use to carry their climbing chalk. A wide strap makes it easy to carry on the shoulder, while a convenient drawstring closure and outside pocket keep your belongings secure and accessible.Monogram canvas. Cowhide leather trim. Textile lining. Black detailing. Contrasting Louis Vuitton logos. Drawstring closure. Shoulder strap. One outside zippered pocket",
+    "price": "1 490,00€"
+  },
+  {
+    "id": "3",
+    "imgSrc": "imgs/bs2.png",
+    "name": "AVENUE SOFT BRIEFCASE",
+    "priceSale": "1 550,00€",
+    "info": "Crafted in soft and supple Damier Infini leather, the Avenue Soft Briefcase is very practical thanks to its multiple carry option. Its internal oganisation also allows 15'' laptop transportation. Damier Infini cowhide leather. Textile lining. Cowhide leather trim. Satin silver colored hardware. Double zip opening. Adjustable and removable leather strap with shoulder pad. External zipped pocket. Internal iPad pocket. 3 internal flat pockets",
+    "size": "38.0 x 28.0 x 10.0 cm",
+    "price": "1 750,00€"
+  },
+  {
+    "id": "4",
+    "imgSrc": "imgs/ws.png",
+    "name": "SPRING STREET HANDBAG",
+    "priceSale": "1 190,00€",
+    "size": "17.0 x 16.0 x 8.5 cm",
+    "info": "The Spring Street handbag is influenced by a design masterminded in 1999 by former Louis Vuitton Artistic Director Marc Jacobs. Fashioned from a blend of hallmark materials in contrasting hues including Monogram Vernis patent leather, it has a cutting-edge aesthetic. It can be carried several ways using the removable strap and top handle. Black. Debossed Monogram Vernis patent cowhide leather. Monogram coated canvas and Epi leather trim. Microfibre lining. Gold-colour hardware. Monogram coated canvas top handle for hand or elbow carry. Removable strap for shoulder or cross-body carry (drop: 50 cm/19.7 inches). Removable Epi leather name tag. Monogram canvas key bell. Iconic S lock. Inside flat pocket",
+    "price": "1 490,00€"
+  },
+  {
+    "id": "5",
+    "imgSrc": "imgs/c4.png",
+    "name": "TWIST PM",
+    "priceSale": "2 000,00€",
+    "info": "The Twist PM in luxurious python leather exhibits exquisite craftsmanship. Lined with goatskin and set off by a gleaming LV Twist lock, the bag is roomier than it looks, thanks to a cleverly designed “wave” base. The sliding chain handle features a croco-leather pad, and can be worn on the shoulder or cross-body. A precious piece, ideal for evening.Black Monogram. Python skin. Python-skin trim. Goatskin lining. Silver-color hardware. LV Twist-lock signature. Signature LV engraved hinged D-ring. Sliding chain (Drop min: 30 cm/11.8 inches, drop max: 55 cm/21.7 inches) with python-leather shoulder pad. Flat pocket for pull-out mirror.",
+    "size": "19.0 x 15.0 x 9.0 cm",
+    "price": "2 380,00€"
+  },
+  {
+    "id": "6",
+    "imgSrc": "imgs/h1.png",
+    "name": "DISTRICT PM",
+    "priceSale": "800,00€",
+    "size": "46cm x 52cm x 58cm",
+    "info": "Fashioned from full-grain Taurillon leather, this Capucines BB handbag displays all the unmistakable features of the New Classic designed by Nicolas Ghesquière: a leather-wrapped LV signature, jewel-like side rings and a distinctive flap closure that can be worn inside or out. Timelessly elegant in classic Black with new ruthenium-metal hardware, it offers multiple carry options, thanks to a top handle and detachable leather strap.",
+    "price": "940,00€"
+  }
+]

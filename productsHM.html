@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/Homepage.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/494029ebc7.js" crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
+    <script src="js/shoppingCard.js"></script>
+
+</head>
+<body>
+<!-- header -->
+<div class="agileits_header">
+    <div class="container">
+        <div class="w3l_offers">
+            <p>SALE UP TO 5% OFF. USE CODE "SALE10%" . <a href="#">SHOP NOW</a></p>
+        </div>
+        <div class="agile-login text-right">
+            <ul>
+                <li><a href="#" class=" my-3" data-toggle="modal" data-target="#modalLRForm">LogIn/Register</a></li>
+                <li><a href="#">Help</a></li>
+
+            </ul>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+</div>
+
+<div class="logo_products">
+    <div class="container">
+        <div class="w3ls_logo_products_left1">
+            <ul class="phone_email">
+                <li><i class="fa fa-phone" aria-hidden="true"></i>Order online or call us : (+0123) 234 567</li>
+
+            </ul>
+        </div>
+        <div class="w3ls_logo_products_left">
+            <a href="index.html"><img src="imgs/Logo.jpg" alt="LOGO"
+                                      style="margin-top :-25px; margin-bottom: -20px"></a>
+        </div>
+        <div class="w3l_search">
+            <form action="#" method="post">
+                <input type="search" name="Search" placeholder="Search for a Product..." required="">
+                <button type="submit" class="btn btn-default search" aria-label="Left Align">
+                    <i class="fa fa-search" aria-hidden="true"> </i>
+                </button>
+                <div class="clearfix"></div>
+            </form>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+    <div class="product_list_header ">
+        <button class="w3view-cart "><i class="fa fa-cart-arrow-down " aria-hidden="true" style="color: #fe9126"
+                                        data-toggle="modal" data-target="#cartInfo"></i></button>
+        <span class="badge total-count">    </span>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="cartInfo" tabindex="10" role="dialog" aria-labelledby="exampleModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <table class="show-cart table">
+
+                    </table>
+                    <div>Total price: $<span class="total-cart"></span></div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Order now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<!-- //header -->
+<!--        LOGIN/REGISTER-->
+<!--Modal: Login / Register Form-->
+<div class="modal fade" id="modalLRForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog cascading-modal" role="document">
+        <!--Content-->
+        <div class="modal-content">
+
+            <!--Modal cascading tabs-->
+            <div class="modal-c-tabs">
+
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs md-tabs tabs-2 light-blue darken-3" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" data-toggle="tab" href="#panel7" role="tab"><i
+                                class="fas fa-user mr-1"></i>
+                            Login</a>
+                    </li>
+                    <li class="nav-item" id="1">
+                        <a class="nav-link" data-toggle="tab" href="#panel8" role="tab"><i
+                                class="fas fa-user-plus mr-1"></i>
+                            Register</a>
+                    </li>
+                </ul>
+
+                <!-- Tab panels -->
+                <div class="tab-content">
+                    <!--Panel 7-->
+                    <div class="tab-pane fade in active" id="panel7" role="tabpanel">
+                        <!--Body-->
+                        <div class="modal-body mb-1" style="height: 150px;">
+                            <div class="md-form form-sm mb-5">
+                                <i class="fas fa-envelope prefix"></i>
+                                <input type="email" id="modalLRInput10" class="form-control form-control-sm validate"
+                                       placeholder="your email">
+                            </div>
+
+                            <div class="md-form form-sm mb-4">
+                                <i class="fas fa-lock prefix"></i>
+                                <input type="password" id="modalLRInput11" class="form-control form-control-sm validate"
+                                       placeholder="your password">
+                            </div>
+                            <div class="options text-center text-md-right mt-1">
+                                <p id="floatLeft">Forgot <a href="#" class="blue-text">Password?</a></p>
+                                <p id="floatRight"><a href="#" class="blue-text">Sign Up</a></p>
+
+                            </div>
+                        </div>
+                        <!--Footer-->
+                        <div class="modal-footer">
+                            <div class="text-center mt-2">
+                                <button class="btn btn-info">Log in <i class="fas fa-sign-in ml-1"></i></button>
+                            </div>
+                            <h5 class="text-left"><b>Or login with:</b></h5>
+                            <div class="text-left btn-group" style="display: block">
+                                <a href="#" class="btn btn-group-sm btn-primary">FaceBook</a>
+                                <a href="#" class="btn btn-group-sm btn-warning">Gmail</a>
+                                <a href="#" class="btn btn-group-sm btn-success">Google</a>
+                            </div>
+                            <button type="button" class="btn btn-outline-info waves-effect ml-auto"
+                                    data-dismiss="modal">Close
+                            </button>
+                        </div>
+
+                    </div>
+                    <!--/.Panel 7-->
+
+                    <!--Panel 8-->
+                    <div class="tab-pane fade " id="panel8" role="tabpanel">
+
+                        <!--Body-->
+                        <div class="modal-body">
+                            <div class="md-form form-sm mb-5">
+                                <i class="fas fa-envelope prefix"></i>
+                                <input type="email" id="modalLRInput12" class="form-control form-control-sm validate"
+                                       placeholder="your email">
+                            </div>
+
+                            <div class="md-form form-sm mb-5">
+                                <i class="fas fa-lock prefix"></i>
+                                <input type="password" id="modalLRInput13"
+                                       class="form-control form-control-sm validate" placeholder="your passwork">
+                            </div>
+
+                            <div class="md-form form-sm mb-4">
+                                <i class="fas fa-lock prefix"></i>
+                                <input type="password" id="modalLRInput14"
+                                       class="form-control form-control-sm validate" placeholder="Repeat password">
+                            </div>
+
+                            <div class="text-center form-sm mt-2">
+                                <button class="btn btn-info">Sign up <i class="fas fa-sign-in ml-1"></i></button>
+                            </div>
+
+                        </div>
+                        <!--Footer-->
+                        <div class="modal-footer">
+                            <div class="options text-right">
+                                <p class="pt-1">Already have an account? <a href="#" class="blue-text">Log In</a></p>
+                            </div>
+                            <button type="button" class="btn btn-outline-info waves-effect ml-auto"
+                                    data-dismiss="modal">
+                                Close
+                            </button>
+                        </div>
+
+                    </div>
+                    <!--/.Panel 8-->
+                </div>
+
+            </div>
+        </div>
+        <!--/.Content-->
+    </div>
+</div>
+<!--    ENG LOGIN/REGISTER-->
+<!-- navigation -->
+<div class="navigation-agileits" data-spy="affix" data-offset-top="197">
+    <div class="container">
+        <nav class="navbar navbar-default">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header nav_2">
+                <button type="button" class="navbar-toggle collapsed navbar-toggle1" data-toggle="collapse"
+                        data-target="#bs-megadropdown-tabs">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <!-- Mega Menu -->
+                    <li class="dropdown">
+                        <a href="productsLV.html" class="dropdown-toggle">Louis Vuitton<b
+                                class="caret"></b></a>
+                        <ul class="dropdown-menu multi-column columns-3">
+                            <div class="row">
+                                <div class="multi-gd-img">
+                                    <ul class="multi-column-dropdown">
+                                        <li><a href="productsLV-men.html">Men's Wallet</a></li>
+                                        <li><a href="#">Women's Wallet</a></li>
+                                        <li><a href="#">Men's Purse</a></li>
+                                        <li><a href="#">Women's Purse</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </ul>
+                    </li>
+                    <li class="dropdown active">
+                        <a href="productsHM.html" class="dropdown-toggle">Hermes<b class="caret"></b></a>
+                        <ul class="dropdown-menu multi-column columns-3">
+                            <div class="row">
+                                <div class="multi-gd-img">
+                                    <ul class="multi-column-dropdown">
+                                        <li><a href="productsHM-men.html">Men's Wallet</a></li>
+                                        <li><a href="#">Women's Wallet</a></li>
+                                        <li><a href="#">Men's Purse</a></li>
+                                        <li><a href="#">Women's Purse</a></li>
+                                    </ul>
+                                </div>
+
+
+                            </div>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="productsDior.html" class="dropdown-toggle">Dior<b
+                                class="caret"></b></a>
+                        <ul class="dropdown-menu multi-column columns-3">
+                            <div class="row">
+                                <div class="multi-gd-img">
+                                    <ul class="multi-column-dropdown">
+                                        <li><a href="productsDior-men.html">Men's Wallet</a></li>
+                                        <li><a href="#">Women's Wallet</a></li>
+                                        <li><a href="#">Men's Purse</a></li>
+                                        <li><a href="#">Women's Purse</a></li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="productsGC.html" class="dropdown-toggle">Perdo<b
+                                class="caret"></b></a>
+                        <ul class="dropdown-menu multi-column columns-3">
+                            <div class="row">
+                                <div class="multi-gd-img">
+                                    <ul class="multi-column-dropdown">
+                                        <li><a href="productsGC.html">Men's Wallet</a></li>
+                                        <li><a href="#">Women's Wallet</a></li>
+                                        <li><a href="#">Men's Purse</a></li>
+                                        <li><a href="#">Women's Purse</a></li>
+                                    </ul>
+                                </div>
+
+
+                            </div>
+                        </ul>
+                    </li>
+                    <li class="dropdown ">
+                        <a href="productsGC.html" class="dropdown-toggle">Gucci<b class="caret"></b></a>
+                        <ul class="dropdown-menu multi-column columns-3">
+                            <div class="row">
+                                <div class="multi-gd-img">
+                                    <ul class="multi-column-dropdown">
+                                        <li><a href="productsGC-men.html">Men's Wallet</a></li>
+                                        <li><a href="#">Women's Wallet</a></li>
+                                        <li><a href="#">Men's Purse</a></li>
+                                        <li><a href="#">Women's Purse</a></li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </ul>
+                    </li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="contact.html">Contact US</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</div>
+<!-- //navigation -->
+<section class="container" style="margin-bottom: 20px">
+    <div class="col-md-3" style="margin-top: 40px">
+        <div class="custom-padding-right">
+            <div class="filter">
+                <div class="tilter-filter">
+                    <a href="#" class="close-filter"></a>
+                    Filter
+                </div>
+            </div>
+            <hr>
+            <div class="filter">
+                <div class="tilter-filter">
+                    <a href="#" class="close-filter"></a>
+                    Price
+                </div>
+                <form>
+                    <input name="price" type="radio" value="$"/> 1 000,00€ - 3 000,00€ <br>
+                    <input name="price" type="radio" value="$"/> 3 000,00€ - 5 000,00€ <br>
+                    <input name="price" type="radio" value="$"/> 5 000,00€ - 7 000,00€ <br>
+                    <input name="price" type="radio" value="$"/> 5 000,00€ - 9 000,00€ <br>
+                    <input name="price" type="radio" value="$"/> 9 000,00€ ++ <br>
+                </form>
+            </div>
+            <hr>
+            <div class="filter">
+                <div class="tilter-filter">
+                    <a href="#" class="close-filter"></a>
+                    Color
+                </div>
+                <form>
+                    <input name="color" type="radio" value="Red"/> Red <br>
+                    <input name="color" type="radio" value="Blue"/> Blue <br>
+                    <input name="color" type="radio" value="Green"/> Green <br>
+                    <input name="color" type="radio" value="Yellow"/> Yellow <br>
+                    <input name="color" type="radio" value="Orange"/> Orange <br>
+                    <input name="color" type="radio" value="Yellow"/> Black <br>
+                </form>
+            </div>
+            <hr>
+            <div class="filter">
+                <div class="tilter-filter">
+                    <a href="#" class="close-filter"></a>
+                    Material
+                </div>
+                <form>
+                    <input name="material" type="radio" value="Real Skin"/> Real Skin <br>
+                    <input name="material" type="radio" value="Synthetic Leather"/> Synthetic Leather <br>
+                </form>
+            </div>
+            <hr>
+            <div class="filter">
+                <div class="tilter-filter">
+                    <a href="#" class="close-filter"></a>
+                    Size
+                </div>
+                <form>
+                    <input name="size" type="radio" value="Small"/> Small <br>
+                    <input name="size" type="radio" value="Medium"/> Medium <br>
+                    <input name="size" type="radio" value="Large"/> Large <br>
+                    <input name="size" type="radio" value="Other"/> Other <br>
+                </form>
+            </div>
+            <hr>
+        </div>
+    </div>
+    <div class="col-md-9">
+        <div id="divproductsHM">
+        </div>
+        <div class="text-center">
+            <button type="submit" class="btn btn-default" style="margin-top: 15px">See More</button>
+        </div>
+    </div>
+
+</section>
+
+
+<!-- //footer -->
+<div class="footer">
+    <div class="container">
+        <div class="w3_footer_grids">
+            <div class="col-md-3 w3_footer_grid">
+                <h3>Information</h3>
+                <ul class="info">
+                    <li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="#">About Us</a></li>
+                    <li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="contact.html">Contact Us</a></li>
+                    <li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="short-codes.html">Short Codes</a>
+                    </li>
+                    <li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="faq.html">FAQ's</a></li>
+                    <li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="products.html">Special Products</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-3 w3_footer_grid">
+                <h3>Category</h3>
+                <ul class="info">
+                    <li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="groceries.html">Men's wallet</a>
+                    </li>
+                    <li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="household.html">women's wallet</a>
+                    </li>
+                    <li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="personalcare.html">men's parse
+                    </a></li>
+                    <li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="packagedfoods.html">women's
+                        parse</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 w3_footer_grid">
+                <h3>Profile</h3>
+                <ul class="info">
+                    <li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="products.html">Store</a></li>
+                    <li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="checkout.html">My Cart</a></li>
+                    <li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="login.html">Login</a></li>
+                    <li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="registered.html">Create Account</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-3 w3_footer_grid">
+                <h3>adress of shop</h3>
+                <ul class="info">
+                    <li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="registered.html">Open: 8:00 Am -
+                        20:00 Pm</a></li>
+                </ul>
+                <div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3833.9249735021585!2d108.22038801476208!3d16.06938264370236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31421833d5d51043%3A0x596a384ad09764ee!2zVMOyYSBOaMOgIFZOUFQgxJDDoCBO4bq1bmcsIDM4IFnDqm4gQsOhaSwgSOG6o2kgQ2jDonUgMSwgSOG6o2kgQ2jDonUsIMSQw6AgTuG6tW5nIDU1MDAwMCwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1573901486480!5m2!1svi!2s"
+                            width="250" height="185" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</div>
+<div class="footer-botm">
+    <div class="container">
+        <div class="w3layouts-foot">
+            <ul>
+                <li><a href="#" class="w3_agile_facebook"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="#" class="agile_twitter"><i class="fab fa-twitter-square"></i></a></li>
+                <li><a href="#" class="w3_agile_dribble"><i class="fab fa-dribbble-square"></i></i></a></li>
+                <li><a href="#" class="w3_agile_vimeo"><i class="fab fa-vimeo-square"></i></a></li>
+            </ul>
+        </div>
+        <div class="payment-w3ls">
+            <img src="imgs/card.png" alt=" " class="img-responsive">
+        </div>
+        <div class="clearfix"></div>
+    </div>
+</div>
+<!-- //footer -->
+<!--Scroll to top-->
+<div class="scroll-top-wrapper ">
+  <span class="scroll-top-inner" title="Go to top">
+    <i class="glyphicon glyphicon-upload"></i>
+  </span>
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
